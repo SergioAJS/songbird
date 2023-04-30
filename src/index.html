@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songbird</title>
+  <link rel="shortcut icon" href="./assets/icons/bird.png" type="image/x-icon">
+</head>
+<body class="body">
+  <div class="container">
+    <header class="header">
+      <div class="header-container">
+        <div class="logo"><img class="logo-image" src="./assets/img/SongbirdParlour_LOGO_FullColor-removebg-preview.webp" alt="songbird logo">
+        </div>
+        <div class="header-buttons">
+          <button class="button-header" id="js-button-main"></button>
+          <button class="button-header" id="js-button-start"></button>
+          <button class="button-header hidden" id="js-button-quiz"></button>
+          <button class="button-header" id="js-button-gallery"></button>
+          <h2 class="score"></h2>
+        </div>
+      </div>
+    </header>
+    <main class="main hidden">
+      <div class="main-container">
+        <ul class="stages">
+          <li class="birds-family"><span class="family"></span></li>
+          <li class="birds-family"><span class="family"></span></li>
+          <li class="birds-family"><span class="family"></span></li>
+          <li class="birds-family"><span class="family"></span></li>
+          <li class="birds-family"><span class="family"></span></li>
+          <li class="birds-family"><span class="family"></span></li>
+        </ul>
+        <section class="question">
+          <div class="question-container">
+            <img class="bird-photo" id="js-bird-photo" alt="bird-photo">
+            <div class="bird-info">
+              <h2 class="bird-name" id="js-bird-name"></h2>
+              <div class="line"></div>
+              <div class="player">
+                <div class="player-controls">
+                  <button class="play player-icon" id="js-play"></button>
+                  <input type="range" step="0.000001" class="seek-bar" id="js-seek-bar1" value="0" min="0" max="100000">
+                  <div class="track-duration" id="js-track-duration"></div>
+                </div>
+                <div class="volume-container" id="js-volume-container">
+                  <div class="volume-button" id="js-volume-button">
+                    <div class="volume unmute" id="js-volume"></div>
+                  </div>
+                  <div class="volume-slider" id="js-volume-slider">
+                    <div class="volume-percentage" id="js-volume-percentage"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="birds-info">
+          <ul class="variants">
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="0">
+              <label class="label" for="0"></label>
+            </li>
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="1">
+              <label class="label" for="1"></label>
+            </li>
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="2">
+              <label class="label" for="2"></label>
+            </li>
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="3">
+              <label class="label" for="3"></label>
+            </li>
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="4">
+              <label class="label" for="4"></label>
+            </li>
+            <li class="bird-select">
+              <input class="checkbox" type="checkbox" name="bird" id="5">
+              <label class="label" for="5"></label>
+            </li>
+          </ul>
+          <div class="bird-about">
+            <div class="bird-about-container">
+              <div class="question-container hidden" id="question-container">
+                <img class="bird-photo" id="js-bird-photo2" alt="bird-photo">
+                <div class="bird-info">
+                  <h2 class="bird-name" id="js-bird-name2"></h2>
+                  <div class="line"></div>
+                  <div class="bird-latin"></div>
+                  <div class="line"></div>
+                  <div class="player">
+                    <div class="player-controls">
+                      <button class="play player-icon" id="js-play2"></button>
+                      <input type="range" step="0.000001" class="seek-bar" id="js-seek-bar2" value="0" min="0" max="100000">
+                      <div class="track-duration" id="js-track-duration2">00:00 / 00:00</div>
+                    </div>
+                    <div class="volume-container" id="js-volume-container2">
+                      <div class="volume-button" id="js-volume-button2">
+                        <div class="volume unmute" id="js-volume2"></div>
+                      </div>
+                      <div class="volume-slider" id="js-volume-slider2">
+                        <div class="volume-percentage" id="js-volume-percentage2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="bird-description"></p>
+            </div>
+          </div>
+        </section>
+        <section class="level">
+          <span class="level-text"></span>
+        </section>
+      </div>
+    </main>
+    <section class="start-page">
+      <div class="greeting">
+        <h1 class="title"></h1>
+        <p class="rules"></p>
+        <p class="select-language">
+          <button class="button" id="js-ru-lang"></button>
+          <button class="button" id="js-en-lang"></button>
+        </p>
+      </div>
+    </section>
+    <section class="game-results hidden">
+      <div class="results-container">
+        <h2 class="congrats"></h2>
+        <p class="message"></p>
+        <button class="button" id="js-button-more"></button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="https://github.com/SergioAJS" class="github" target="_blank"></a>
+        <div class="year">© 2022</div>
+        <a href="https://rs.school/js/" class="course" target="_blank"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
